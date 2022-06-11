@@ -9,20 +9,64 @@
       rel="stylesheet"
     />
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="cookie-cc.css" />
   </head>
+
   <body>
-    <div></div>
-    <div id="cookiePopup" class="hide">
-      <img src="cookie.png" />
-      <p>
-        Our website uses cookies to provide your browsing experience and
-        relevant information. Before continuing to use our website, you agree &
-        accept of our <a href="#">Cookie Policy & Privacy.</a>
-      </p>
-      <button id="acceptCookie">Accept</button>
-    </div>
+    <button
+      data-cc="c-settings"
+      class="cc-link cc-reconsent"
+      style="
+        position: fixed;
+        left: 8px;
+        bottom: 16px;
+        border-radius: 999px;
+        padding: 4px;
+        display: grid;
+        place-items: center;
+        width: 40px;
+        height: 40px;
+        box-shadow: rgb(204 204 204 / 50%) 0 2px 10px 0;
+        border: 1px solid #e8e8e8;
+        background-color: #fff;
+      "
+      aria-haspopup="dialog"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="#041b15"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"></path>
+        <path d="M8.5 8.5v.01"></path>
+        <path d="M16 15.5v.01"></path>
+        <path d="M12 12v.01"></path>
+        <path d="M11 17v.01"></path>
+        <path d="M7 14v.01"></path>
+      </svg>
+    </button>
+    <!-- <div class="cc-container">
+      <div id="cookiePopup" class="hide-cookieconsent">
+        <div class="cc-title">We used cookie!</div>
+        <div class="cc-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam quis exercitation. <a href="#">Manage preferences</a>
+        </div>
+        <div class="cc-btn">
+          <button class="cc-p-btn" id="acceptCookie">Accept All</button>
+          <button class="cc-s-btn" id="rejectCookie">Reject All</button>
+        </div>
+      </div>
+    </div> -->
     <!-- Script -->
-    <script src="script.js"></script>
+    <script src="cookie-cc.js"></script>
+    <script src="cookie-cc-init.js"></script>
   </body>
 </html>
